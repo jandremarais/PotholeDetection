@@ -47,6 +47,6 @@ The images inside the folders are only samples and should be deleted before down
 
 **Edit:** The data is no longer available at that link. I will contact the organisers to explore alternative options.
 
-The folder `custom_layers` and the files `densenet121.py` and `resnet_101.py` are from [this](https://github.com/flyyufelix/cnn_finetune) awesome repo. It contains code to create common ConvNet architectures in Keras, including pretrained ImageNet weights. See the `README.md` of the original repo to get access to the pretrained weights and save them in the `models` directory (again using the `gddown.py` script).
+The folder `custom_layers` and the files `densenet121.py` and `resnet_101.py` are from [this](https://github.com/flyyufelix/cnn_finetune) awesome repo. It contains code to create common ConvNet architectures in Keras, including pretrained ImageNet weights. See the `README.md` of the original repo to get access to the pretrained weights and save them in the `models` directory (again using the `gddown.py` script). I edited the model scripts for compatibility with Keras 2.0.
 
 Now you are ready to run the code in the `solution.ipynb` notebook. I've included some explanations and comments in-between the code cells to increase readability.
