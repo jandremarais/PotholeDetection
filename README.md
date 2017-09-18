@@ -1,6 +1,6 @@
 # Pothole Detection
 
-This repository contains all the files and code necessary to reproduce my winning solution to the pothole detection problem given at the [MIIA - Deep Learning Hackathon](http://machineintelligenceafrica.org/activities/hackathon/). Hope this can be helpful to the participants new to the field of Machine/Deep Learning (or anyone else).
+This repository contains all the files and code necessary to reproduce my winning solution to the pothole detection problem given at the [MIIA - Deep Learning Hackathon](http://machineintelligenceafrica.org/activities/hackathon/). I hope this can be helpful to the participants new to the field of Machine/Deep Learning (or anyone else).
 
 Note, since this was a hackathon, we had <10 hours to solve the problem. I'm sure there is still plenty of room for improvement and wouldn't be surprised if the code contains some bugs. I'll leave that to you to discover. Feel free to contact me if you have any questions and/or suggestions (maraisjandre9@gmail.com).
 
@@ -10,11 +10,15 @@ I strongly recommend the cloud service, [Crestle](crestle.com). It takes 3 minut
 
 Once your server is set up, clone this repo with the terminal command
 
-> `git clone https://github.com/jandremarais/PotholeDetection.git`
+``` 
+git clone https://github.com/jandremarais/PotholeDetection.git 
+```
 
 Since the data is too big to save in a Github repo, you need to download it from [this](https://drive.google.com/open?id=0B1IZ6xxwxyvTcWNOWHAxeVgyTlU%C2%A0) Google Drive link. If using a cloud server, you can download the data with this command (thanks to [this](https://stackoverflow.com/a/39225039/6785054) SO answer)
 
-> `python gddown.py 'file_id' 'file_destination'`
+```
+python gddown.py 'file_id' 'file_destination'
+```
 
 and then extract files with `jar -xf train.zip`.
 
