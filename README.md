@@ -14,13 +14,12 @@ Once your server is set up, clone this repo with the terminal command
 git clone https://github.com/jandremarais/PotholeDetection.git 
 ```
 
-Since the data is too big to save in a Github repo, you need to download it from [this](https://drive.google.com/open?id=0B1IZ6xxwxyvTcWNOWHAxeVgyTlU%C2%A0) Google Drive link. If using a cloud server, you can download the data with this command (thanks to [this](https://stackoverflow.com/a/39225039/6785054) SO answer)
+Since the data is too big to save in a Github repo, you need to download it from [this](https://drive.google.com/drive/folders/0B1IZ6xxwxyvTWk51VlVfNFlKNHc) Google Drive link. If using a cloud server, you can download the data with this command (thanks to [this](https://stackoverflow.com/a/39225039/6785054) SO answer)
 
 ```
-python gddown.py 'file_id' 'file_destination'
+python gddown.py 0B1IZ6xxwxyvTdkV0dm9hWm9pX0k train.zip
 ```
-
-and then extract files with `jar -xf train.zip`.
+and then extract files with `jar -xf train.zip`. You can do the same for the test files, `python gddown.py 0B1IZ6xxwxyvTSEQzaVVkYXNKdzQ test.zip`
 
 Note the directory structure:
 
@@ -41,11 +40,11 @@ data
         └── QPJVBLDFqTEnvrc.JPG 
 ```
 
-The images inside the folders are only samples and should be deleted before downloading the data.
+The images inside the folders of this repo are only samples and should be deleted before downloading the data.
 
 `data_crop` follows the same structure. Its contents will be created by a code cell in the `solution.ipynb` notebook. 
 
-**Edit:** The data is no longer available at that link. I will contact the organisers to explore alternative options.
+**Edit:** Since the labels of the test images are now made available, the test folder from the Google Drive link also have 'positive' and 'negative' subdirectories.
 
 The folder `custom_layers` and the files `densenet121.py` and `resnet_101.py` are from [this](https://github.com/flyyufelix/cnn_finetune) awesome repo. It contains code to create common ConvNet architectures in Keras, including pretrained ImageNet weights. See the `README.md` of the original repo to get access to the pretrained weights and save them in the `models` directory (again using the `gddown.py` script). I edited the model scripts for compatibility with Keras 2.0.
 
